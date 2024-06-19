@@ -107,7 +107,7 @@ const ResultsPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-6xl p-8 bg-white shadow-md rounded-lg">
-        <h2 className="text-3xl font-bold mb-6 text-center text-gray-700">Laporan Data Form</h2>
+        <h2 className="text-3xl font-bold mb-6 text-center text-gray-700">Laporan Data Lead</h2>
         <div className="mb-4 flex justify-between items-center">
           <div className="relative">
             <select
@@ -118,7 +118,6 @@ const ResultsPage = () => {
               <option value="nama">Nama</option>
               <option value="email">Email</option>
               <option value="nocontact">No Contact</option>
-              <option value="tenor">Tenor</option>
               <option value="status">Status</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
