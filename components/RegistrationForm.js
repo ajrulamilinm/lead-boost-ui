@@ -53,7 +53,7 @@ const RegistrationForm = () => {
   const handleTenorChange = (e) => {
     const value = e.target.value;
     // Check if the value is numeric and in multiples of 3, up to 24 months (2 years)
-    if (!isNaN(value) && value % 3 === 0 && value <= 24) {
+    if (!isNaN(value) && value % 3 === 0 && value <= 36) {
       setTenor(value);
     }
   };
@@ -119,7 +119,7 @@ const RegistrationForm = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       {!showSuccessMessage && (
         <div className="w-full max-w-lg p-8 bg-white shadow-md rounded-lg">
-          <h2 className="text-2xl font-bold mb-6 text-center">Registration Form</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">Pengajuan Data Pinjaman</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="nama" className="block text-gray-700 font-medium mb-2">Nama:</label>
@@ -174,7 +174,7 @@ const RegistrationForm = () => {
                 className="w-full p-3 border border-gray-300 rounded-lg"
               >
                 <option value="">Pilih Tenor (Bulan)</option>
-                {Array.from({ length: 24 }, (_, i) => {
+                {Array.from({ length: 12 }, (_, i) => {
                   const month = (i + 1) * 3; // Kelipatan 3 hingga maksimal 2 tahun (24 bulan)
                   return <option key={month} value={month}>{month} Bulan</option>;
                 })}

@@ -7,6 +7,7 @@ export default function Home() {
     <div className="bg-gray-100 min-h-screen">
       {/* Header */}
       <header className="bg-white shadow-md">
+      <meta name="dicoding:email" content="ajrulamilin9f@rocketmail.com"></meta>
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:p-6 lg:px-8">
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center space-x-2">
